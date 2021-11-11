@@ -12,6 +12,7 @@ use std::iter::Iterator;
 /// [`Iterator`]: https://doc.rust-lang.org/nightly/core/iter/iterator/trait.Iterator.html
 /// [`Clone`]: https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html
 /// [`new`]: struct.PrevPeekable.html#method.new
+#[derive(Debug)]
 pub struct PrevPeekable<I> where 
     I: Iterator, 
     <I as ::std::iter::Iterator>::Item: ::std::clone::Clone, {
